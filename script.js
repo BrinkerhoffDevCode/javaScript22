@@ -49,3 +49,44 @@ function contarCaracteres(texto) {
     return texto.length;
 }
 
+contarCaracteres();
+
+const carro = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    ano: 2020
+};
+
+console.log(carro.modelo);
+
+function mensagemPersonalizada(nome, mensagem = "Olá!") {
+    console.log(`${mensagem} ${nome}`);
+}
+
+mensagemPersonalizada("Ana");
+mensagemPersonalizada("Lucas", "Oi");
+
+function media(num1, num2, num3) {
+    return (num1 + num2 + num3) / 3;
+}
+
+console.log(media(8, 9, 10));
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log(`${i}: Múltiplo de 3`);
+    } else {
+        console.log(`${i}: Não múltiplo de 3`);
+    }
+}
+
+function verificarPalindromo(palavra) {
+    const palavraInvertida = palavra.split('').reverse().join('');
+    return palavra === palavraInvertida;
+}
+
+console.log(verificarPalindromo("arara"));  // true
+console.log(verificarPalindromo("carro"));  // false
+
+
+
